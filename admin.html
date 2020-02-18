@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Ekran Yönetimi </title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.css" />
+</head>
+<body>
+    <!--<nav class="navbar navbar-expand-sm bg-info navbar-dark ">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <button class="nav-link" onclick="javascript:void(0)">Sunucular</button>
+            </li>
+            <li class="nav-item">
+                <button class="nav-link" onclick="javascript:void(0)">Sayaçlar</button>
+            </li>
+        </ul>
+    </nav>
+        -->
+    <ul class="nav nav-tabs  " role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active " data-toggle="tab" href="#icerik" onclick='callTable("http://sysmon.fintek.local:5000/api", "Sistems", "icerik");'>Sunucular</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " data-toggle="tab" href="#icerik" onclick='callTable("http://sysmon.fintek.local:5000/api", "Sayacs", "icerik");'>Sayaclar</a>
+        </li>
+    </ul>
+
+
+    <div class="container" style="margin:auto;" id="icerik">
+        <i class="fa fa-spinner fa-spin" style="display:block;margin:auto;width:25%;font-size:240px"></i>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/yjscript.js"></script>
+    <script src="fonts/js/fontawesome-all.js"></script>
+
+</body>
+</html>
